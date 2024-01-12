@@ -1,4 +1,3 @@
-return {
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
@@ -45,4 +44,3 @@ require("catppuccin").setup({
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })
-}
