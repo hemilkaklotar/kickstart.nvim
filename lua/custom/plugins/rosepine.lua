@@ -13,7 +13,7 @@ return {
       styles = {
         bold = true,
         italic = true,
-        transparency = false,
+        transparency = true,
       },
 
       groups = {
@@ -56,14 +56,14 @@ return {
 
       before_highlight = function(group, highlight, palette)
         -- Disable all undercurls
-        -- if highlight.undercurl then
-        --     highlight.undercurl = false
-        -- end
+        if highlight.undercurl then
+          highlight.undercurl = false
+        end
         --
         -- Change palette colour
-        -- if highlight.fg == palette.pine then
-        --     highlight.fg = palette.foam
-        -- end
+        if highlight.fg == palette.pine then
+          highlight.fg = palette.foam
+        end
       end,
     }
 
@@ -71,6 +71,6 @@ return {
     -- vim.cmd('colorscheme rose-pine-moon')
     -- vim.cmd('colorscheme rose-pine-dawn')
 
-    vim.cmd.colorscheme 'rose-pine'
+    -- vim.cmd.colorscheme 'rose-pine'
   end,
 }
