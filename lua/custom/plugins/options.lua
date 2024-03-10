@@ -1,4 +1,7 @@
 -- Here is the config for custom options
 vim.opt.relativenumber = true
 
-return {}
+return {
+  -- netrw file tree open
+  vim.keymap.set('n', '<C-b>', ':let @/=expand("%:t") <Bar> execute \'Explore\' expand("%:h") <Bar> normal n<CR>', { noremap = true, silent = true }),
+}
