@@ -16,12 +16,12 @@ return {
       autocmd CursorMoved * normal! zz
   augroup END
   ]],
-  -- Insert mode mapping for Enter key
-  vim.keymap.set('i', '<CR>', '<C-\\><C-O><C-E><CR>', { noremap = true, silent = true }),
-
-  -- Insert mode mapping for Backspace key
-  vim.keymap.set('i', '<BS>', '<BS><C-O>zz', { noremap = true, silent = true }),
-
-  -- Normal mode mapping for 'o' key
-  vim.keymap.set('n', 'o', '<C-E>o', { noremap = true, silent = true }),
+  -- -- Insert mode mapping for Enter key
+  -- -- vim.keymap.set('i', '<CR>', '<C-\\><C-O><C-E><CR>', { noremap = true, silent = true }),
+  --
+  -- -- Normal mode mapping for 'o' key
+  -- -- vim.keymap.set('n', 'o', '<C-E>o', { noremap = true, silent = true }),
+  --
+  -- vim.keymap.set('i', '<BS>', '<BS><C-O>zz', { noremap = true, silent = true }),
+  -- -- Insert mode mapping for Backspace key
 }
